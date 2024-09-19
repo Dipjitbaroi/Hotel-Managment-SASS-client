@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* === Swiper Slider === */
+.swiper-er-button-disabled,
+.swiper-rts-button-disabled {
+  @apply bg-green-slimy/50 pointer-events-none;
+}
+
+.swiper-er-pagination .swiper-pagination-bullet {
+  @apply w-1.5 h-1.5;
+}
+
+.swiper-er-pagination .swiper-pagination-bullet-active {
+  @apply bg-green-slimy;
+}
+
+.custom-scroll-bar ::-webkit-scrollbar {
+  width: 10px;
+  height: 100%;
+  background-color: rgba(235, 232, 226, 0.774);
+  border-radius: 4px;
+}
+
+.custom-scroll-bar ::-webkit-scrollbar-thumb {
+  height: 30px;
+  background: rgba(92, 92, 190, 0.507);
+  border-radius: 4px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+.hide-number-arrow-input::-webkit-outer-spin-button,
+.hide-number-arrow-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.hide-number-arrow-input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.db-currency path {
+  stroke: white;
+}
+.page-footer,
+.page-footer-space {
+  height: 30px;
+}
+.page-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding-right: 60px;
+}
+.signature {
+  position: fixed;
+  bottom: 10;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.page {
+  page-break-after: always;
+}
+
+@page {
+  margin-bottom: 4mm;
+}
+
